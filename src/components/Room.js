@@ -15,15 +15,15 @@ import { useState } from "react";
 //   }
 export default function Room() {
     const [lightStatus, setLight] = useState(false);
-    const lit = 'The light is on';
-    const dark = 'The room is dark';
+    const light = 'The room light';
+    const dunkel = 'The room is dark';
     const toggle =()=>{
         setLight(!lightStatus);
     };
     return (    
-        <div className={ lightStatus? lit: dark}>
-            <h1>{lightStatus? lit : dark }</h1>
-            <button onClick={toggle}>{ lightStatus? 'dark' : 'white' }</button> 
+        <div className={lightStatus ? 'lit room': 'dark room'}>
+            <h1> {lightStatus ? light : dunkel }</h1>
+            <button onClick={toggle}>{ lightStatus? 'Dark' : 'Light'  }</button> 
         </div>         
     );
 }

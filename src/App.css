@@ -7,6 +7,7 @@ body,
   text-align: center;
   font-family: "Georgia", serif;
   font-size: 1.5rem;
+ 
 }
 button {
   padding: 0.25rem 0.5rem;
@@ -18,8 +19,10 @@ button {
 .lit {
   background-color: white;
   color: black;
+  /* padding: 30px; */
 }
 .dark {
   background-color: black;
   color: white;
+  /* padding: 30px; */
 }
