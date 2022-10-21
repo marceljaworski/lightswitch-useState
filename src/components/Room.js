@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Room() {
     const [lightStatus, setLight] = useState(false);
-    const light = 'The room light';
+    const light = 'The light is on';
     const dunkel = 'The room is dark';
     const toggle =()=>{
         setLight(!lightStatus);
