@@ -1,7 +1,9 @@
+import Lightswitch from "./components/Room";
+
 export default function App() {
     return (
         <div>
-            <h1>Hello World</h1>
+            <Lightswitch />
         </div>
     );
 };
