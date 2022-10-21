@@ -8,21 +8,17 @@ body,
   font-family: "Georgia", serif;
   font-size: 1.5rem;
 }
-
 button {
   padding: 0.25rem 0.5rem;
   font-size: 1rem;
 }
-
 .room {
   padding: 30px;
 }
-
 .lit {
   background-color: white;
   color: black;
 }
-
 .dark {
   background-color: black;
   color: white;

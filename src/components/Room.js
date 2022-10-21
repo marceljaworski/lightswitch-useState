@@ -1,14 +1,29 @@
 import { useState } from "react";
-
-const [ light, setLight ] = useState(lit)
-function Lightswitch () {
-    return (
-        <div className="button__container">
-            <h1 className="text__lit">The room is lit</h1>
-            <h1 className="text__dark">The room is dark</h1>
-            
-            <button type="button" onClick={()=> setLight("dark")}>Lightswitch</button>
+// export default function Room() {
+//     const [stateMode, setStateMode] = useState(false);
+//     const lit = "The room is light";
+//     const dark = "The room is dark";
+//     const evenClick = () => {
+//       setStateMode(!stateMode);
+//     };
+//     return (
+//       <div className={stateMode ? lit : dark}>
+//         <h1> {stateMode ? lit : dark}</h1>
+//         <button onClick={evenClick}>{stateMode ? "Light" : "dark"}</button>
+//       </div>
+//     );
+//   }
+export default function Room() {
+    const [lightStatus, setLight] = useState(false);
+    const lit = 'The light is on';
+    const dark = 'The room is dark';
+    const toggle =()=>{
+        setLight(!lightStatus);
+    };
+    return (    
+        <div className={ lightStatus? lit: dark}>
+            <h1>{lightStatus? lit : dark }</h1>
+            <button onClick={toggle}>{ lightStatus? 'dark' : 'white' }</button> 
         </div>         
-    )
+    );
 }
-export default Lightswitch;
